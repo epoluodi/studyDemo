@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center" />
+
+    <com.yangxiaoguang.www.studydemo.Scan.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:background="@color/transparent" />
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blackTransparent8"
+
+        >
+
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/btnreturn"
+            android:layout_centerVertical="true"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_bar_left_selector"
+            />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            android:gravity="center_horizontal|center_vertical"
+            android:singleLine="true"
+            android:text="二维码"
+
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</FrameLayout>
